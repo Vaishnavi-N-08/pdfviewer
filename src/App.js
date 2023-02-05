@@ -34,7 +34,7 @@ export default class App extends Component {
     e.preventDefault();
     const formData = new FormData();
     formData.append('file', this.state.file);
-    fetch('http://localhost:5000/uploadFileAPI', {
+    fetch('https://pdfviewerback.onrender.com/uploadFileAPI', {
       method: 'POST',
       body: formData,
     })
